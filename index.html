@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timenest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <div class="zelda">
+    <video autoplay loop muted playsinline class="back-video" id="background-video">
+      <source src="image/forest.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="container">
+      <!-- Clock -->
+      <div id="clock-wrapper">
+        <h1>Clock</h1>
+        <div id="time">00:00:00</div>
+        <p id="date">Monday | 4 Dec' 2024</p>
+      </div>
+
+      <!-- Floating Buttons -->
+      <div class="floating-buttons">
+        <button id="theme-btn">Theme</button>
+        <button id="music-btn">Music</button>
+        <button id="pomodoro-btn">Pomodoro</button>
+        <button id="todo-btn">To-Do</button>
+      </div>
+
+      <!-- Bottom Link -->
+      <div class="bottom-link">
+        <a href="https://sajjanmayank.github.io/404squaD/" target="_blank" id="link-button">Visit Our Website</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup Containers -->
+  <!-- Theme Popup -->
+  <div id="theme-container" class="popup hidden">
+    <h2>Choose a Theme</h2>
+    <button class="theme-button" id="theme-1-btn" data-video="image/forest.mp4">Zelda</button>
+    <button class="theme-button" id="theme-2-btn" data-video="image/sukuna.mp4">Sukuna</button>
+    <button class="theme-button" id="theme-3-btn" data-video="image/sunset.mp4">Sunset</button>
+<button class="theme-button" id="theme-4-btn" data-video="image/minecraft.mp4">Minecraft</button>
+<button class="theme-button" id="theme-5-btn" data-video="image/kuromi.mp4">Kuromi</button>
+<button class="theme-button" id="theme-6-btn" data-video="image/night.mp4">Night</button>
+
+  </div>
+
+  <!-- To-Do Popup -->
+  <div id="todo-container" class="popup hidden">
+    <div class="header">
+      <h2>To-Do List</h2>
+      <button id="minimize-todo-btn">−</button>
+    </div>
+    <ul id="todo-list"></ul>
+    <div class="todo-input">
+      <input type="text" id="todo-input" placeholder="Add a task..." />
+      <button id="add-task-btn">Add</button>
+    </div>
+  </div>
+
+  <!-- Music Popup -->
+  <div id="music-container" class="popup hidden">
+    <div class="header">
+      <h2>Music Player</h2>
+      <button id="minimize-music-btn">−</button>
+    </div>
+    <div id="music-list">
+      <button data-src="music/soni soni.mp3">Soni Soni</button>
+      <button data-src="music/focus.mp3">Focus</button>
+      <button data-src="music/piano.mp3">Piano</button>
+    </div>
+    <audio id="audio-player" controls loop>
+      <source src="music/sonisoni.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
+
+  <!-- Pomodoro Popup -->
+  <div id="pomodoro-container" class="popup hidden">
+    <div class="header">
+      <h2>Pomodoro Timer</h2>
+      <button id="minimize-pomodoro-btn">−</button>
+    </div>
+    <div id="timer-display">25:00</div>
+    <div class="controls">
+      <button id="start-timer-btn">Start</button>
+
+      <button id="reset-timer-btn">Reset</button>
+    </div>
+  </div>
+
+  <!-- Copyright Footer -->
+  <footer class="footer">
+    <p>© 404squaD</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
