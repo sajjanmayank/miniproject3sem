@@ -175,7 +175,7 @@ button:hover {
 /* Bottom Link Button */
 .bottom-link {
   position: absolute;
-  bottom: 70px;
+  bottom: 100px; /* Adjusted for spacing */
   left: 50%;
   transform: translateX(-50%);
 }
