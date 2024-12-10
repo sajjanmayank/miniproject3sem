@@ -8,7 +8,7 @@
 body, html {
   height: 100%;
   font-family: Arial, sans-serif;
-  overflow: hidden;
+  overflow: hidden; /* Prevent scrolling */
 }
 
 /* Background Video */
@@ -175,7 +175,7 @@ button:hover {
 /* Bottom Link Button */
 .bottom-link {
   position: absolute;
-  bottom: 100px; /* Adjusted for spacing */
+  bottom: 60px; /* Ensures spacing from the footer */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -199,7 +199,7 @@ button:hover {
 
 /* Footer Styling */
 .footer {
-  position: fixed;
+  position: absolute; /* Fix at the bottom */
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
@@ -209,6 +209,7 @@ button:hover {
   padding: 10px 20px;
   border-radius: 5px;
   text-align: center;
+  width: auto;
 }
 
 .footer p {
